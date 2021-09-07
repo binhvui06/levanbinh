@@ -1,0 +1,458 @@
+error_reporting(0);
+session_start();
+$BBlack="\033[1;30m" ;      
+$BRed="\033[1;31m"         ;
+$BGreen="\033[1;32m"       ;
+$BYellow="\033[1;33m"   ;
+$BBlue="\033[1;34m"        ;
+$BPurple="\033[1;35m"      ;
+$BCyan="\033[1;36m"   ;
+$BWhite="\033[1;37m"    ;
+$Blue="\033[0;34m";
+$res="\033[0m";
+$red="\033[1;31m";
+$xanh="\033[1;32m";
+$green="\033[1;32m";
+$blue="\033[1;36m";
+$yellow="\033[1;33m";
+$turquoise="\033[1;34m";
+$maugi="\033[1;35m";
+$white= "\033[1;37m";
+$BBlack="\033[1;30m" ;      
+$BRed="\033[1;31m"         ;
+$BGreen="\033[1;32m"       ;
+$BYellow="\033[1;33m"   ;
+$BBlue="\033[1;34m"        ;
+$BPurple="\033[1;35m"      ;
+$BCyan="\033[1;36m"   ;
+$BWhite="\033[1;37m"    ;
+$Blue="\033[0;34m";
+$lime="\033[1;37m";
+$red="\033[1;31m";
+$xanh="\033[1;32m";
+$cyan="\033[1;36m";
+$yellow="\033[1;33m";
+$turquoise="\033[1;34m";
+$maugi="\033[1;35m";
+$white= "\033[1;37m";
+$orange= "\033[1;29m";
+@system('clear');
+$sver= web('keytool/baotri',$useragent);
+if ($sver== 'pbv20'){echo "";
+}else{ 
+echo $green."  \n \nPhiên bản Tool đang sử dụng là$red pbv20 $green Vui lòng cật nhập phiên bản mới tại : $BYellow https://shopmailco.tk/ \n"; exit();}
+eval(glt('https://shopmailco.tk/binhvui1231122334vip/logo.php'));
+echo $white."- - - - - - - - - - - - - - - - - - - - - - - - - - - -\n";
+eval(glt('https://shopmailco.tk/binhvui1231122334vip/thongbao.php'));
+echo $white."- - - - - - - - - - - - - - - - - - - - - - - - - - - -\n";
+eval(glt('https://shopmailco.tk/binhvui1231122334vip/thongbao1.php'));
+echo $white."- - - - - - - - - - - - - - - - - - - - - - - - - - - -\n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;104;90m 1 \033[0;1;91m]$BGreen TOOL FREE \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;105;90m 2 \033[0;1;91m]$BGreen TOOL PHÍ \n";
+echo "\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$blue  Hãy Nhập Chế Độ : $BWhite";
+$nhap = trim(fgets(STDIN));
+if ($nhap == '1'){
+	//tool free
+        $a=date('d'); // 
+        $b=date("m");
+        $thoigian=date('d/m');
+$day = [];
+$day= date('d-m-y');
+$today = date("d-m-y");
+$d = date("d-m");
+$color2=array($a+$b+3740+$a*$b+49827);
+$cl1=$color2[array_rand($color2)];
+
+$color3=array($a+$b+3740+$a*$b+49827);
+$cl2=$color3[array_rand($color3)];
+
+$color4=array($a+$b+3740+$a*$b+49827);
+$cl3=$color4[array_rand($color4)];
+
+$color5=array($a+$b+3740+$a*$b+49827);
+$cl4=$color5[array_rand($color5)];
+$key = "$cl1"."$cl2"."$cl3"."$cl4";
+$long_url = urlencode("shopmailco.tk/keytool/keytool.php?key=$key");
+$api_token = 'a6f66d3e3c65556949f20b2f5439bea0c8316c5c';
+$api_url = "https://link1s.com/api?api={$api_token}&url={$long_url}";
+$result = @json_decode(file_get_contents($api_url), true);
+$checkkey = file_get_contents("https://shopmailco.tk/keytool/keytool.php?key=$key");
+$d = date("d-m");
+$_check = file_exists("keylikelvb$d.txt");
+echo $white."- - - - - - - - - - - - - - - - - - - - - - - - - - - -\n";
+echo $BGreen."Truy Cập Vào Link : $BWhite".$result["shortenedUrl"]."".$BGreen." Để Lấy Key Miễn Phí\n";
+echo "\033[1;31m[\033[1;33mTHÔNG BÁO\033[1;31m]\033[1;32m Đây Là Tool Free. Key Tool Phải Lấy Lại Mỗi Ngày Nhé \n";
+if ($_check !='1'){
+$gh = date("d-m", strtotime("yesterday"));
+$yt = "keylikelvb$gh.txt";
+$_check2 = file_exists("$yt");
+if($_check2==1){
+  unlink("$yt");
+}
+for($j = 3;$j> 0;$j--){
+  echo $BCyan."Chuyển Hướng Đến Trang Lấy Key Sau $BCyan".$j;
+  sleep(1);
+  echo "\r";
+  echo "                                          \r";
+}
+system("termux-open-url ".$result["shortenedUrl"]."");
+echo $BWhite."- - - - - - - - - - - - - - - - - - - - - - - - - - - -\n";
+    echo " \033[1;33m[\033[1;35mWARNING\033[1;33m] \033[1;32m Nhập Key Miễn Phí Đã Lấy : $BWhite";
+    $keyy = trim(fgets(STDIN));
+    }
+if ($_check =='1'){
+  $keyy = file_get_contents("keylikelvb$d.txt");
+  $vt = 1;
+  echo $BGreen."Đang Lấy Key...";
+  sleep(2);
+  echo "\r                                         \r";
+}
+if($keyy == ''){
+  echo $BRed."Key Sai Rồi, Vào Link Phía Trên Để Lấy Key\n";
+  exit;
+}
+  if($keyy == $key)
+      {
+             echo $BGreen."Key Hợp Lệ\n";
+             $mf = fopen("keylikelvb$d.txt", "w");
+             fwrite($mf, $keyy);
+             fclose($mf);
+      }
+      else
+      {
+           echo $BRed."Key Sai Rồi, Vào Link Phía Trên Để Lấy Key\n";
+           exit;
+      }
+@system('clear');
+$url="https://shopmailco.tk/binhvuimp343535342455353/demfree.php"; 
+$ch=curl_init(); 
+$timeout=5; 
+curl_setopt($ch, CURLOPT_URL, $url); 
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout); 
+$doc=curl_exec($ch); 
+curl_close($ch);
+eval(glt('https://shopmailco.tk/binhvuimp343535342455353/logo.php'));        
+echo "  \033[1;41;33mTool Vip 17in 1 Pro [TOOL MIỄN PHÍ] \033[0m\n";
+echo $g;
+echo "\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$turquoise Bản Quyền : $BGreen Lê Văn Bình\n";
+echo "\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$blue Ngày hết hạn :  $yellow$day \n";
+echo "\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$blue Zalo : $yellow 0357385033 \n";
+echo "\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$blue Gruops Zalo : $BGreen https://zalo.me/g/tpvskf085 \n";
+echo "\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$blue YOUTUBE : $cyan  LÊ VĂN BÌNH ✅ \n";
+echo "\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$blue Bây giờ là :  $BPurple".date("h:i")." ".date("d/m/Y")."\n";
+echo "\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$blue Số lần sử dụng tool :  $yellow".$doc." \n";
+echo "\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$blue Website mua key + mail cổ tự động : $yellow https://shopmailco.tk/ \n";
+echo "\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$blue Mã hóa code tại : $yellow https://tuongtacdao.net/ \n";
+echo "\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$green Donate Để Có Động Lực Viết Tool\n";
+echo $green."
+╔═══════════════╗
+║".$blue." SHOPMAILCO.TK ".$BYellow."║  
+╚═══════════════╝\n\n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;101;90m 1 \033[0;1;91m]$BGreen Mua Key + Mail Cổ $BYellow (NEW)\n";
+echo $green."
+╔══════════════╗
+║".$blue." Trao Đổi Sub ".$BYellow."║  
+╚══════════════╝\n\n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;101;90m 2 \033[0;1;91m]$BGreen TDS Cookie \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;102;90m 3 \033[0;1;91m]$BGreen TDS Token \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;105;90m 4 \033[0;1;91m]$BGreen Mua Tương Tác TDS $BYellow (NEW) \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;105;90m 5 \033[0;1;91m]$BGreen Tặng Xu TDS $BYellow (NEW) \n";
+echo $green."
+╔══════════════╗
+║".$blue." Facebook ".$BYellow."    ║  
+╚══════════════╝\n\n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;103;90m 6 \033[0;1;91m]$BGreen Auto Tag Bạn Bè Cmt \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;104;90m 7 \033[0;1;91m]$BGreen Chọc Bạn Bè \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;105;90m 8 \033[0;1;91m]$BGreen Lọc Bạn Bè Không Tương Tác \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;101;90m 9 \033[0;1;91m]$BGreen Hủy Follow \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;105;90m 10 \033[0;1;91m]$BGreen Hủy Like Page \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;106;90m 11 \033[0;1;91m]$BGreen Bão Like Wall Bạn Bè \n";
+echo $green."
+╔══════════════╗
+║".$blue." Khác ".$BYellow."        ║  
+╚══════════════╝\n\n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;102;90m 12 \033[0;1;91m]$BGreen Youtube \n";
+echo $green."
+╔══════════════╗
+║".$blue." Kiếm Tiền ".$BYellow."   ║  
+╚══════════════╝\n\n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;103;90m 13 \033[0;1;91m]$BGreen Pandalikes \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;101;90m 14 \033[0;1;91m]$BGreen Gom Lúa Đa Luồng \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;102;90m 15 \033[0;1;91m]$BGreen Ezylike \n";
+echo $green."
+╔═════════════╗
+║".$blue." Intagram ".$BYellow."   ║  
+╚═════════════╝\n\n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;104;90m 16 \033[0;1;91m]$BGreen Vipig \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;105;90m 17 \033[0;1;91m]$BGreen Qlizz Intagram \n";
+echo "\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$blue  Hãy Nhập Chế Độ : $BWhite";
+$choncn = trim(fgets(STDIN));
+if ($choncn == '1'){
+	//shopmailco
+        eval(glt('https://shopmailco.tk/binhvuimp343535342455353/muakey.php'));
+	}
+if ($choncn == '2'){
+	//tdsck
+        eval(glt('https://shopmailco.tk/binhvuimp343535342455353/tdsckkdl.php'));
+	}
+if ($choncn == '3'){
+	//tdstk
+        eval(glt('https://shopmailco.tk/binhvuimp343535342455353/tdstkkdl.php'));
+	}
+if ($choncn == '4'){
+	//muatttds
+        eval(glt('https://shopmailco.tk/binhvuimp343535342455353/muatttds.php'));
+	}
+if ($choncn == '5'){
+	//tangxutds
+        eval(glt('https://shopmailco.tk/binhvuimp343535342455353/tangxutds.php'));
+	}
+if ($choncn == '6'){
+	//tagbbcmt
+        eval(glt('https://shopmailco.tk/binhvuimp343535342455353/tagbb.php'));
+	}
+if ($choncn == '7'){
+	//chocbb
+        eval(glt('https://shopmailco.tk/binhvuimp343535342455353/chocbb.php'));
+        }
+if ($choncn == '8'){
+	//locbb
+        eval(glt('https://shopmailco.tk/binhvuimp343535342455353/locbb.php'));
+	}
+if ($choncn == '9'){
+	//huyfollow
+        eval(glt('https://shopmailco.tk/binhvuimp343535342455353/unfollow.php'));
+	}
+if ($choncn == '10'){
+	//huypage
+        eval(glt('https://shopmailco.tk/binhvuimp343535342455353/huypage.php'));
+        }
+if ($choncn == '11'){
+	//baolike
+        eval(glt('https://shopmailco.tk/binhvuimp343535342455353/baolike.php'));
+	}
+if ($choncn == '12'){
+	//youtube
+        eval(glt('https://shopmailco.tk/binhvuimp343535342455353/youtube.php'));
+	}
+if ($choncn == '13'){
+	//pandalikes
+        eval(glt('https://shopmailco.tk/binhvuimp343535342455353/pandalikes.php'));
+        }
+if ($choncn == '14'){
+	//gomlua
+        eval(glt('https://shopmailco.tk/binhvuimp343535342455353/gomlua.php'));
+	}
+if ($choncn == '15'){
+	//ezylike
+        eval(glt('https://shopmailco.tk/binhvuimp343535342455353/ezylike.php'));
+	}
+if ($choncn == '16'){
+	//vipig
+        eval(glt('https://shopmailco.tk/binhvuimp343535342455353/vipig.php'));
+	}
+if ($choncn == '17'){
+	//qlizz intagram
+        eval(glt('https://shopmailco.tk/binhvuimp343535342455353/intgramqlizz.php'));
+        }	
+}else if ($nhap == '2'){
+echo $white."- - - - - - - - - - - - - - - - - - - - - - - - - - - -\n";
+echo " \033[1;33m[\033[1;35mWARNING\033[1;33m] \033[1;32mNhập API Key : $BWhite";
+$keyy = trim(fgets(STDIN));
+$useragent = json_decode(file_get_contents('https://shopmailco.tk/keytool/api.php?key='.$keyy))->{'useragent'};
+$n = web('keytool/api.php?key='.$keyy,$useragent);
+$apikey= json_decode($n)->{'pass'};
+echo $pass;
+$time = json_decode($n)->{'time'};
+$name = json_decode($n)->{'user'};
+$unfl = json_decode($n)->{'unfl'};
+if ($keyy !== $apikey){echo $BRed."\n KEY SAI Vui lòng liên hệ zalo $BWhite 0357385033 $BRed để mua key \n ";
+    exit();}
+@system('clear');  
+$url="https://shopmailco.tk/binhvui1231122334vip/dem.php"; 
+$ch=curl_init(); 
+$timeout=5; 
+curl_setopt($ch, CURLOPT_URL, $url); 
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout); 
+$doc=curl_exec($ch); 
+curl_close($ch);
+eval(glt('https://shopmailco.tk/binhvui1231122334vip/logo.php'));    
+echo "  \033[1;41;33mTool Vip 27in 1 Pro [TOOL PHÍ] \033[0m\n";
+echo $g;
+echo "\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$turquoise Bản Quyền : $BGreen$name\n";
+echo "\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$blue Ngày hết hạn :  $yellow$time ⏳ \n";
+echo "\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$blue Zalo : $yellow 0357385033 \n";
+echo "\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$blue Gruops Zalo : $BGreen https://zalo.me/g/tpvskf085 \n";
+echo "\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$blue YOUTUBE : $cyan  LÊ VĂN BÌNH ✅ \n";
+echo "\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$blue Bây giờ là :  $BPurple".date("h:i")." ".date("d/m/Y")." ⏰\n";
+echo "\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$blue Số lần sử dụng tool :  $yellow".$doc." \n";
+echo "\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$blue Website mua key + mail cổ tự động : $yellow https://shopmailco.tk/ \n";
+echo "\033[1;37m~\033[1;31m[\033[1;32m✓\033[1;31m]$white =>$blue Mã hóa code tại : $yellow https://tuongtacdao.net/ \n";
+echo "\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$green Donate Để Có Động Lực Viết Tool\n";
+echo $green."
+╔═══════════════╗
+║".$blue." SHOPMAILCO.TK ".$BYellow."║  
+╚═══════════════╝\n\n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;103;90m 1 \033[0;1;91m]$BGreen Mua Key + Mail Cổ \n";
+echo $green."
+╔══════════════╗
+║".$blue." Trao Đổi Sub ".$BYellow."║  
+╚══════════════╝\n\n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;101;90m 2 \033[0;1;91m]$BGreen TDS Đa Luồng Cookie\n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;102;90m 3 \033[0;1;91m]$BGreen TDS Đa Luồng Token \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;103;90m 4 \033[0;1;91m]$BGreen Mua Tương Tác TDS \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;106;90m 5 \033[0;1;91m]$BGreen Tặng Xu TDS \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;101;90m 6 \033[0;1;91m]$BGreen Đổi Mật Khẩu TDS Đa Luồng \n";
+echo $green."
+╔════════════════╗
+║".$blue." Tương Tác Chéo ".$BYellow."║  
+╚════════════════╝\n\n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;105;90m 7 \033[0;1;91m]$BGreen TTC Đa Luồng Cookie  \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;106;90m 8 \033[0;1;91m]$BGreen TTC Đa Luồng Token \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;103;90m 9 \033[0;1;91m]$BGreen TTC Tiktok $BYellow (NEW) \n";
+echo $green."
+╔══════════════╗
+║".$blue." Facebook ".$BYellow."    ║  
+╚══════════════╝\n\n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;107;90m 10 \033[0;1;91m]$BGreen Nuôi Facebook \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;101;90m 11 \033[0;1;91m]$BGreen Auto Comment \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;103;90m 12 \033[0;1;91m]$BGreen Auto Tag Bạn Bè Cmt \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;104;90m 13 \033[0;1;91m]$BGreen Chọc Bạn Bè \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;105;90m 14 \033[0;1;91m]$BGreen Lọc Bạn Bè Không Tương Tác \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;101;90m 15 \033[0;1;91m]$BGreen Hủy Follow \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;105;90m 16 \033[0;1;91m]$BGreen Hủy Like Page \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;102;90m 17 \033[0;1;91m]$BGreen Bão Like Wall Bạn Bè \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;104;90m 18 \033[0;1;91m]$BGreen Like4like.org \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;101;90m 19 \033[0;1;91m]$BGreen Machine-liker \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;102;90m 20 \033[0;1;91m]$BGreen Backup dữ liệu Facebook mở checkpoin  \n";
+echo $green."
+╔══════════════╗
+║".$blue." Khác ".$BYellow."        ║  
+╚══════════════╝\n\n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;102;90m 21 \033[0;1;91m]$BGreen Youtube \n";
+echo $green."
+╔══════════════╗
+║".$blue." Kiếm Tiền ".$BYellow."   ║  
+╚══════════════╝\n\n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;103;90m 22 \033[0;1;91m]$BGreen Pandalikes \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;101;90m 23 \033[0;1;91m]$BGreen Gom Lúa Đa Luồng \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;102;90m 24 \033[0;1;91m]$BGreen Ezylike \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;106;90m 25 \033[0;1;91m]$BGreen Team-like \n";
+echo $green."
+╔═════════════╗
+║".$blue." Intagram ".$BYellow."   ║  
+╚═════════════╝\n\n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;104;90m 26 \033[0;1;91m]$BGreen Vipig \n";
+echo $xanh."\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$xanh  Nhập \033[1;91m[\033[1;105;90m 27 \033[0;1;91m]$BGreen Qlizz Intagram \n";
+echo "\033[1;37m~\033[1;31m[\033[1;32m🍬\033[1;31m]$white =>$blue  Hãy Nhập Chế Độ : $BWhite";
+$nhap = trim(fgets(STDIN));
+if ($nhap == '1'){
+	//shopmailco
+        eval(glt('https://shopmailco.tk/binhvui1231122334vip/muakey.php'));	
+}else if ($nhap == '2'){
+	//tdsck
+        eval(glt('https://shopmailco.tk/binhvui1231122334vip/tdsck.php'));	
+}else if ($nhap == '3'){
+	//tdstk
+        eval(glt('https://shopmailco.tk/binhvui1231122334vip/tds.php'));
+}else if ($nhap == '4'){
+	//muatttds
+        eval(glt('https://shopmailco.tk/binhvui1231122334vip/muatttds.php'));	
+}else if ($nhap == '5'){
+	//tangxutds
+        eval(glt('https://shopmailco.tk/binhvui1231122334vip/tangxutds.php'));      
+}else if ($nhap == '6'){
+	//doipasstds
+        eval(glt('https://shopmailco.tk/binhvui1231122334vip/doipasstds.php'));       
+}else if ($nhap == '7'){
+	//ttcck
+	eval(glt('https://shopmailco.tk/binhvui1231122334vip/ttcck.php'));
+}else if ($nhap == '8'){
+	//ttctk
+        eval(glt('https://shopmailco.tk/binhvui1231122334vip/ttctk.php'));
+}else if ($nhap == '9'){
+	//ttctiktok
+        eval(glt('https://shopmailco.tk/binhvui1231122334vip/ttctiktok.php'));
+}else if ($nhap == '10'){
+	//nuoifb
+        eval(glt('https://shopmailco.tk/binhvui1231122334vip/nuoifb.php'));
+}else if ($nhap == '11'){
+	//cmt
+        eval(glt('https://shopmailco.tk/binhvui1231122334vip/spamcmt.php'));
+}else if ($nhap == '12'){
+	//tagbbcmt
+        eval(glt('https://shopmailco.tk/binhvui1231122334vip/tagbb.php'));
+}else if ($nhap == '13'){
+	//chocbb
+        eval(glt('https://shopmailco.tk/binhvui1231122334vip/chocbb.php'));
+}else if ($nhap == '14'){
+	//locbb
+        eval(glt('https://shopmailco.tk/binhvui1231122334vip/locbb.php'));
+}else if ($nhap == '15'){
+	//huyfollow
+        eval(glt('https://shopmailco.tk/binhvui1231122334vip/unfollow.php'));
+}else if ($nhap == '16'){
+	//huypage
+        eval(glt('https://shopmailco.tk/binhvui1231122334vip/huypage.php'));
+}else if ($nhap == '17'){
+	//baolike
+        eval(glt('https://shopmailco.tk/binhvui1231122334vip/baolike.php'));
+}else if ($nhap == '18'){
+	//like4like.org
+        eval(glt('https://shopmailco.tk/binhvui1231122334vip/like4like.php'));
+}else if ($nhap == '19'){
+	//machine-liker
+        eval(glt('https://shopmailco.tk/binhvui1231122334vip/machinelike.php'));
+}else if ($nhap == '20'){
+	//backup du lieu fb
+        eval(glt('https://shopmailco.tk/binhvui1231122334vip/backup.php'));
+}else if ($nhap == '21'){
+	//youtube
+        eval(glt('https://shopmailco.tk/binhvui1231122334vip/youtube.php'));
+}else if ($nhap == '22'){
+	//pandalikes
+        eval(glt('https://shopmailco.tk/binhvui1231122334vip/pandalikes.php'));
+}else if ($nhap == '23'){
+	//gomlua
+        eval(glt('https://shopmailco.tk/binhvui1231122334vip/gomlua.php'));
+}else if ($nhap == '24'){
+	//ezylike
+        eval(glt('https://shopmailco.tk/binhvui1231122334vip/ezylike.php'));
+}else if ($nhap == '25'){
+	//team-like
+        eval(glt('https://shopmailco.tk/binhvui1231122334vip/teamlike.php'));
+}else if ($nhap == '26'){
+	//vipig
+        eval(glt('https://shopmailco.tk/binhvui1231122334vip/vipig.php'));
+}else if ($nhap == '27'){
+	//qlizz intagram
+        eval(glt('https://shopmailco.tk/binhvui1231122334vip/intgramqlizz.php'));
+}else{exit($BRed."Nhập Sai Vui Lòng Chạy Lại\n");}
+}
+function glt($url){
+    $ch = curl_init($url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
+    $headers = array();
+    $headers[] = 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36';
+    $headers[] = 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9';
+    $headers[] = 'Accept-Language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5';
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+    $result = curl_exec($ch);
+    if (curl_errno($ch)) {
+        echo $BRed.'Vui lòng kiểm tra lại kết nối mạng !';
+    }
+    curl_close($ch);
+    return $result;
+} 
+function web($key,$useragent){
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, 'https://shopmailco.tk/'.$key);
+curl_setopt($ch, CURLOPT_USERAGENT, $useragent);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER,true);
+curl_setopt($ch, CURLOPT_TIMEOUT, 60);
+curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 60);
+return curl_exec($ch);
+}
